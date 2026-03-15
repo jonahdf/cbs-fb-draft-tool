@@ -273,7 +273,7 @@
         const order = upcoming.split(',');
         for (let i = 0; i < order.length && picks.length < count; i++) {
           if (order[i].trim() === tid) {
-            picks.push(currentPick + i + 1);
+            picks.push(currentPick + i);
           }
         }
         if (picks.length > 0) return picks;
